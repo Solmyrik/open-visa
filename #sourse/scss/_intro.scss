@@ -1,0 +1,125 @@
+.intro {
+  padding: 40px 0px 100px;
+  @media (max-width: $mob) {
+    padding: 40px 0px 40px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    @media (max-width: $mob) {
+      display: block;
+    }
+  }
+
+  &__left {
+    flex: 0 1 50%;
+    @media (max-width: $mob) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__suptitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #202020;
+    padding-left: 42.5px;
+    position: relative;
+    margin-bottom: 24px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      width: 30px;
+      height: 1px;
+      background-color: #6bbafd;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 122%;
+    color: #202020;
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 151%;
+    color: #202020;
+    max-width: 400px;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    border-radius: 10px;
+    padding: 12px 24px;
+    width: 179px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 122%;
+    color: #fff;
+    background-color: #6bbafd;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__right {
+    flex: 0 1 50%;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 265px;
+      width: 265px;
+      background-color: #6bbafd;
+      border-radius: 10px;
+      z-index: -1;
+      @media (max-width: $mob) {
+        top: -20px;
+        width: 60%;
+        height: 60%;
+      }
+    }
+  }
+
+  &__img {
+    padding-bottom: 90%;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 90%;
+  }
+}
+.ibg {
+}
+
+.intro__decor_1 {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  img {
+    width: 100px;
+  }
+}
+.intro__decor_2 {
+  position: absolute;
+  top: 0px;
+  left: -90px;
+  transform: rotate(90deg);
+  img {
+    width: 100px;
+  }
+  @media (max-width: $mob) {
+    display: none;
+  }
+}

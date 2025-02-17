@@ -1,0 +1,43 @@
+.gallery {
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: $gray;
+    margin-bottom: 50px;
+  }
+
+  &__slider {
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+  }
+
+  &__slide {
+  }
+
+  &__img {
+    padding-bottom: 100%;
+    border-radius: 10px;
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.swiper-block {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
