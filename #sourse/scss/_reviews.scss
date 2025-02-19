@@ -49,13 +49,13 @@
   }
 
   &__item {
-    background-color: #ffffff;
+    background-color: #515e6e;
     border-radius: 30px;
-    box-shadow: 0 4px 30px -12px rgba(17, 12, 46, 0.16);
+
     padding: 30px;
     display: flex;
     gap: 10px;
-    color: #1f2123;
+    color: $light;
     @media (max-width: $mob) {
       background-color: inherit;
       border-radius: 0;
@@ -65,7 +65,7 @@
   }
 
   &__avatar {
-    color: #1f2123;
+    color: $light;
     img {
       width: 40px;
       height: 40px;
@@ -81,7 +81,7 @@
 
   &__name {
     margin-bottom: 10px;
-    color: #1f2123;
+    color: $light;
   }
 
   &__stars-wrapper {
@@ -91,7 +91,7 @@
   }
 
   &__description {
-    color: #1f2123;
+    color: $light;
   }
 
   &__button {

@@ -6,10 +6,15 @@ if (mapSection) {
   function init() {
     let map = new ymaps.Map('map', {
       center: [55.66147841302425, 37.555366262565556], // ваши данные
+      theme: 'islands#dark',
       zoom: 16,
+      // theme: 'dark',
     });
 
     let placemark = new ymaps.Placemark([55.66147841302425, 37.555366262565556], {}, {});
+    const layer = new ymaps.YMapDefaultSchemeLayer({
+      theme: 'dark',
+    });
 
     // map.controls.remove('geolocationControl'); // удаляем геолокацию
     // map.controls.remove('searchControl'); // удаляем поиск

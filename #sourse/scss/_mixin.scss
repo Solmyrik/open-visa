@@ -61,7 +61,7 @@ $light-blue: #64fdc3;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6bbafd;
+  background-color: #2d8cff;
   border-radius: 6px;
   color: $white;
   transition: opacity 0.3s;
@@ -76,7 +76,7 @@ $light-blue: #64fdc3;
   font-weight: 500;
   text-align: center;
   margin-bottom: 50px;
-  color: $black;
+  color: $light;
   @media (max-width: $mob) {
     font-size: 26px;
     margin-bottom: 30px;

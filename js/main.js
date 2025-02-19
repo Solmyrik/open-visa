@@ -54,8 +54,10 @@ function feqHandler(e) {
   e.target.classList.toggle('active');
   if (e.target.classList.contains('active')) {
     currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+    currentContent.classList.add('active');
   } else {
     currentContent.style.maxHeight = 0;
+    currentContent.classList.remove('active');
   }
 }
 

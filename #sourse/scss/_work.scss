@@ -6,7 +6,7 @@
     font-weight: 700;
     margin-bottom: 20px;
     // @include gradient;
-    color: $black;
+    color: $light;
     @media (max-width: $mob) {
       padding-top: 30px;
       // font-size: 36px;
@@ -18,7 +18,7 @@
     // font-weight: 600;
     font-size: 24px;
     line-height: 122%;
-    color: #202020;
+    // color: #202020;
     @media (max-width: $mob) {
       font-size: 14px;
     }
@@ -73,9 +73,10 @@
     transition: all 0.5s;
     line-height: 150%;
     // background-color: #515e6e;
-    box-shadow: 2px 4px 11px 4px rgba(136, 136, 156, 0.25);
+    // box-shadow: 2px 4px 11px 4px #515e6e;
     border-radius: 0px 0px 15px 15px;
-    color: $black;
+    background-color: #515e6e;
+    color: $light;
     p {
       &:not(:last-child) {
         margin-bottom: 7.5px;
@@ -97,7 +98,7 @@
   &__counres {
     display: flex;
     flex-wrap: wrap;
-    color: $black;
+    color: $white;
     .work__icons {
       img {
         border-radius: 50%;
@@ -110,7 +111,7 @@
     align-items: center;
     gap: 10px;
     padding: 15px 0px;
-    color: $black;
+    color: $white;
     cursor: pointer;
     img {
       width: 30px;

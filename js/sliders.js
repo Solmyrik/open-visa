@@ -23,6 +23,18 @@
 //   },
 // });
 
+new Swiper('.intro__block', {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInterection: false,
+  },
+  speed: 800,
+  effect: 'fade',
+});
+
 new Swiper('.gallery__slider', {
   slidesPerView: 2,
   loop: true,
