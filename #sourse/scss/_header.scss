@@ -6,19 +6,22 @@
   }
 
   &__container {
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: $mob) {
+      height: 90px;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: top;
     img {
-      width: 100px;
+      width: 225px;
       @media (max-width: $mob) {
-        width: 80px;
+        width: 205px;
       }
       @media (max-width: 370px) {
         // width: 150px;
@@ -105,7 +108,7 @@
 .menu {
   &__body {
     @media (max-width: $mob) {
-      transform: translate(100%, 0%);
+      transform: translate(225%, 0%);
       transition: transform 0.8s;
       position: fixed;
       width: 100%;
@@ -184,7 +187,7 @@
     cursor: pointer;
     z-index: 10;
     right: 15px;
-    top: 63px;
+    top: 47px;
     transform: translate(0, -50%);
 
     span {
